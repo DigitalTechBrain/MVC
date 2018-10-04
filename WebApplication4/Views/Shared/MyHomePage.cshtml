@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model WebApplication4.Models.Items
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyHomePage</title>
+</head>
+<body>
+    <div>
+        Welcome Jack in MVC View.This is First MVC Part.
+        <br />
+        current date time =  @ViewData["CurrentTime"]  
+
+        <br /><br /><br /><br />
+
+        Customer ID : @Model.id
+        Name        : @Model.name
+    </div>
+</body>
+</html>

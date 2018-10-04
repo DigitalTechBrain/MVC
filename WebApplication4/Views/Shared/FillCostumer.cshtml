@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+
+@model WebApplication4.Models.MyCostumer
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FillCostumer</title>
+</head>
+<body>
+    <div>
+        <form action="DisplayCostumer" method="post">
+            Name     :- <input type="text" name="CustName" /> <br />
+            Roll No  :- <input type="text" name="CustRno" />  <br />
+            Class    :- <input type="text" name="CustClass" /> <br />
+            Address  :- <input type="text" name="CustAddress" /> <br />
+
+            <input type="submit" value="Click here" />
+        </form>
+    </div>
+</body>
+</html>

@@ -12,12 +12,28 @@ namespace WebApplication4
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.IgnoreRoute("{resource}.config");
+
+
+
+            //routes.MapRoute(
+            //    name: "Home",
+            //    url: "",
+            //    defaults: new { controller = "Home", action = "GotoHome", id = UrlParameter.Optional }
+            //);
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                name: "Home2",
+                url: "Home",
+                defaults: new { controller = "Home", action = "MyHomePage", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Home3",
+                url: "costumer",
+                defaults: new { controller = "Home", action = "FillCostumer", id = UrlParameter.Optional }
+            );
+
         }
     }
 }
